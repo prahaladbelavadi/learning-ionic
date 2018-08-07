@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+
+<br>
+
+<ion-toolbar>
+ <ion-segment [(ngModel)]="icons" color="secondary">
+   <ion-segment-button value="aperture">
+     <ion-icon name="md-aperture"></ion-icon>
+   </ion-segment-button>
+   <ion-segment-button value="md-at">
+     <ion-icon name="md-at"></ion-icon>
+   </ion-segment-button>
+   <ion-segment-button value="md-basket" (click)="presentConfirm()">
+     <ion-icon name="md-basket"></ion-icon>
+   </ion-segment-button>
+ </ion-segment>
+</ion-toolbar>
+
+
+
+</ion-content>
+
+<ion-footer>
+
+</ion-footer>
