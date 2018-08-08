@@ -17,6 +17,11 @@
 
 <br>
 
+
+<button ion-button round color="green" outline (click)="presentConfirm()">
+  Buy
+  <ion-icon  name="basket"></ion-icon>
+</button>
 <ion-toolbar>
  <ion-segment [(ngModel)]="icons" color="secondary">
    <ion-segment-button value="aperture">
@@ -25,7 +30,7 @@
    <ion-segment-button value="md-at">
      <ion-icon name="md-at"></ion-icon>
    </ion-segment-button>
-   <ion-segment-button value="md-basket" (click)="presentConfirm()">
+   <ion-segment-button value="md-basket">
      <ion-icon name="md-basket"></ion-icon>
    </ion-segment-button>
  </ion-segment>
