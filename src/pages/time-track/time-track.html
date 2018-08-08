@@ -11,7 +11,7 @@
   </ion-navbar>
 
 </ion-header>
-
+Timer tracker
 
 <ion-content padding>
 
@@ -20,14 +20,14 @@
 <ion-footer>
   <ion-toolbar>
     <ion-title>
-      Time type: {{timeType == 'play' ? '96' : '77'}} svv
+      Time type: {{timeType == 'play' ? '96' : '77'}}
       <ion-icon [name]="timeType" color="green">
       </ion-icon>
-    <ion-title>
+    </ion-title>
   </ion-toolbar>
 
   <ion-toolbar>
-    <ion-segment [(ngModel)]=timeType color="green">
+    <ion-segment [(ngModel)]="timeType" color="green">
         <ion-segment-button value="work">
           Work
         </ion-segment-button>
